@@ -5,11 +5,14 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <!-- Font Anwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
+    
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
           <img src="./images/logo.png" alt="">
@@ -20,22 +23,25 @@
           <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-link text-secondary" href="#"><i class="fa-solid fa-house"></i> Home<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#products">Products</a>
+                <a class="nav-link" href="#products"><i class="fa-solid fa-utensils"></i> Products</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+                <a class="nav-link dropdown" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell" aria-hidden="true"></i> Notifications</a>
                 <div class="dropdown-menu" aria-labelledby="dropdownId">
-                  <a class="dropdown-item" href="#">About Us</a>
-                  <a class="dropdown-item" href="#">Contact Us</a>
+                  <a class="dropdown-item text-secondary" href="#"><i class="fas fa-id-card"></i> About Us</a>
+                  <a class="dropdown-item text-secondary" href="#"><i class="fas fa-contact-book"></i> Contact Us</a>
                 </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-message"></i> About me</a>
               </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Vu Nguyen Huong ...">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              <input class="form-control mr-sm-2" type="text" placeholder="Search here...">
+              <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
             </form>
           </div>
         </nav>
@@ -86,22 +92,29 @@
         <div class="content text-center p-3">
           <h2>Our Popular Dishes</h2>
           <p class="text-muted font-italic">We Love Foods</p>
-          <p class="text-justify pl-5 pr-5">
+          <p class="text-justify pl-3 pr-3">
             We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
         </div>
 
+        <!-- List Product -->
         <h3 class="pb-3" id="products">Products</h3>
-
         <div class="card-deck">
           <div class="card">
             <img class="card-img-top" src="./images/1.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">The Best Easy One Pot Chicken</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small><span class="badge badge-danger ml-1">New</span></p>
               <input name="" id="" class="btn btn-primary" type="button" value="Add To Cart">
-              <input name="" id="" class="btn btn-secondary" type="button" value="More">
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                More
+            </button>
+            <div class="collapse mt-3" id="collapseExample1">
+              <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              </div>
+            </div>
             </div>
           </div>
           <div class="card">
@@ -109,9 +122,16 @@
             <div class="card-body">
               <h5 class="card-title">Fruity Pancake with Orange</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small> <span class="badge badge-danger ml-1">New</span></p></p>
               <input name="" id="" class="btn btn-primary" type="button" value="Add To Cart">
-              <input name="" id="" class="btn btn-secondary" type="button" value="More">
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                  More
+              </button>
+              <div class="collapse mt-3" id="collapseExample2">
+                <div class="card card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                </div>
+              </div>
             </div>
           </div>
           <div class="card">
@@ -121,7 +141,14 @@
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               <input name="" id="" class="btn btn-primary" type="button" value="Add To Cart">
-              <input name="" id="" class="btn btn-secondary" type="button" value="More">
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                More
+            </button>
+            <div class="collapse mt-3" id="collapseExample3">
+              <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              </div>
+            </div>
             </div>
           </div>
         </div>
@@ -134,7 +161,14 @@
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               <input name="" id="" class="btn btn-primary" type="button" value="Add To Cart">
-              <input name="" id="" class="btn btn-secondary" type="button" value="More">
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+                More
+            </button>
+            <div class="collapse mt-3" id="collapseExample4">
+              <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              </div>
+            </div>
             </div>
           </div>
           <div class="card">
@@ -144,7 +178,14 @@
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               <input name="" id="" class="btn btn-primary" type="button" value="Add To Cart">
-              <input name="" id="" class="btn btn-secondary" type="button" value="More">
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
+                More
+            </button>
+            <div class="collapse mt-3" id="collapseExample5">
+              <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              </div>
+            </div>
             </div>
           </div>
           <div class="card">
@@ -154,7 +195,14 @@
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               <input name="" id="" class="btn btn-primary" type="button" value="Add To Cart">
-              <input name="" id="" class="btn btn-secondary" type="button" value="More">
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
+                More
+            </button>
+            <div class="collapse mt-3" id="collapseExample6">
+              <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              </div>
+            </div>
             </div>
           </div>
         </div>
@@ -162,7 +210,7 @@
     </main>
 
     <footer>
-
+      
     </footer>
     
     <!-- Optional JavaScript -->
