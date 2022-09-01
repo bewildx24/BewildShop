@@ -2,8 +2,10 @@
 <html lang="en">
     <head>
         <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-        <title>Bewild Shop</title><!-- Required meta tags -->
+        <title>Bewild Shop</title>
+        <!-- Required meta tags -->
         <meta charset="utf-8">
+        <meta property="og:image" content="./images/8.jpg">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Font Anwesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -23,21 +25,20 @@
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link text-secondary" href="#"><i class="fa-solid fa-house"></i> Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#products"><i class="fa-solid fa-utensils"></i> Products</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#about"><i class="fa-solid fa-users"></i> About</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fa-solid fa-bell" aria-hidden="true"></i> Notifications</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-message"></i> More</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item text-secondary" href="#"><i class="fas fa-id-card"></i> About Us</a>
-                                <a class="dropdown-item text-secondary" href="#"><i class="fas fa-contact-book"></i> Contact Us</a>
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact"><i class="fa-solid fa-circle-info"></i> Contact</a>
                         </li>
                     </ul>
                     <button type="button" class="btn btn-outline-success mr-2" data-toggle="modal" data-target="#modalSignIn" >Sign In</button>
@@ -100,18 +101,18 @@
                 </div>
 
                 <!-- List Product -->
-                <h3 class="pb-3" id="products">Products</h3>
+                <h3 class="pb-3 text-center" id="products">Products</h3>
                 <div class="card-deck">
                     <div class="card">
-                        <img class="card-img-top" src="./images/1.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="./images/v1.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">The Best Easy One Pot Chicken</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small><span class="badge badge-danger ml-1">New</span></p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small><span class="badge badge-success ml-1">New</span></p>
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">
                                 Add To Cart
                             </button>
-                            <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                            <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
                                 More
                             </button>
                             <div class="collapse mt-3" id="collapseExample1">
@@ -123,15 +124,15 @@
                     </div>
 
                     <div class="card">
-                        <img class="card-img-top" src="./images/2.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="./images/v2.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Fresh and Healthy Mixed Mayonnaise</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small><span class="badge badge-danger ml-1">New</span></p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small><span class="badge badge-success ml-1">New</span></p>
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">
                                 Add To Cart
                             </button>
-                            <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                            <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
                                 More
                             </button>
                             <div class="collapse mt-3" id="collapseExample2">
@@ -143,15 +144,15 @@
                     </div>
 
                     <div class="card">
-                        <img class="card-img-top" src="./images/4.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="./images/v4.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Fruity Pancake with Orange</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small><span class="badge badge-danger ml-1">New</span></p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small><span class="badge badge-success ml-1">New</span></p>
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">
                                 Add To Cart
                             </button>
-                            <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                            <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
                                 More
                             </button>
                             <div class="collapse mt-3" id="collapseExample3">
@@ -164,21 +165,98 @@
                 </div>
             </div>
 
-            <div class="container-fluid">
-                <div class="content text-center text-justify">
-                    <h3 class="m-4">About Us</h3>
-                    <h6>Expedita voluptas omnis cupiditate totam eveniet nobis sint iste. Dolores est repellat corrupti reprehenderit.</h6>
-                    <p>Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt et. Inventore et et dolor consequatur itaque ut voluptate sed et. Magnam nam ipsum tenetur suscipit voluptatum nam et est corrupti.
-                        Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt et. Inventore et et dolor consequatur itaque ut voluptate sed et. Magnam nam ipsum tenetur suscipit voluptatum nam et est corrupti.
-                    </p>
-                <img src="./images/6.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+            <div class="container-fluid" id="about">
+                <div class="content">
+                    <h3 class="mt-4 text-center">About Us</h3>
+                    <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/h2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5><a href="https://www.facebook.com/VuNguyenHuong.Official" class="text-decoration-none text-success" target="_blank">Vu Nguyen Huong</a></h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="./images/h1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5><a href="https://www.facebook.com/kemss.huyenss" class="text-decoration-none text-success" target="_blank">Mai Thi Khanh Huyen</a></h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="./images/h3.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5><a href="https://www.facebook.com/duonggbigarms" class="text-decoration-none text-success" target="_blank">Dinh Hai Duong</a></h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid" id="contact">
+                <h3 class="text-center m-3">Contact Us</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Full name</label>
+                                    <input type="text" class="form-control" id="inputPassword4" placeholder="Full name" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress">Address</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="510 VNH Street" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-8">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control" id="inputCity" placeholder="City" required>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputState">Category</label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected>Choose...</option>
+                                        <option>Food</option>
+                                        <option>Meat</option>
+                                        <option>Vegetables</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-group">
+                                  <label for="">Message</label>
+                                  <textarea class="form-control" name="" id="" rows="3" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block">Send</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./images/v2.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                    </div>
                 </div>
             </div>
         </main>
 
         <footer>
-
+            <div class="container-fluid text-center p-5" style="font-size: 20px;">
+                <a href="https://www.facebook.com/VuNguyenHuong.Official" target="_blank" class="text-secondary"><i class="fa-brands fa-square-facebook m-1"></i></a>
+                <a href="https://www.instagram.com/vunguyenhuong.official/" target="_blank" class="text-secondary"><i class="fa-brands fa-instagram m-1"></i></a>
+                <a href="https://www.instagram.com/huyenmtkph17826/" target="_blank" class="text-secondary"><i class="fa-brands fa-snapchat m-1"></i></a>
+                <a href="https://www.pinterest.com/bewild_" target="_blank" class="text-secondary"><i class="fa-brands fa-pinterest m-1"></i></a>
+                <a href="https://twitter.com/VuNguynHng9" target="_blank" class="text-secondary"><i class="fa-brands fa-twitter m-1"></i></a>
+                <a href="https://github.com/bewildx24" target="_blank" class="text-secondary"><i class="fa-brands fa-github m-1"></i></a>
+                <p style="font-size: 15px;" class="mt-2">Powered by <a href="https://www.facebook.com/VuNguyenHuong.Official" target="_blank">Vu Nguyen Huong</a></p>
+            </div>
         </footer>
+        <!-- End Footer -->
+
 
         <!-- Modal Sign In -->
         <div class="modal fade" id="modalSignIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -212,7 +290,7 @@
                         <p>You do not have an account, <a href="#modalSignUp" class="text-danger" data-toggle="modal" data-target="#modalSignUp" data-dismiss="modal">Register Now</a></p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-outline-success" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -251,7 +329,7 @@
                         <p class="text-center">Already have an account, <a href="#" class="text-danger" data-dismiss="modal" data-toggle="modal" data-target="#modalSignIn">Sign In Here</a></p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-outline-success" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -283,9 +361,9 @@
                         Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-outline-success" data-dismiss="modal">Close</button>
                         
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#alertSuccess" data-dismiss="modal">Add To Cart</button>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#alertSuccess" data-dismiss="modal">Add To Cart</button>
                     </div>
                 </div>
             </div>

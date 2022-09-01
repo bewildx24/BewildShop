@@ -1,5 +1,13 @@
-.social__group{
+.social__group {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+}
+
+h2:hover, h3:hover, h4:hover, h5:hover {
+    color: #28A745;
+}
+
+.navbar-collapse i:hover {
+    color: #28A745;
 }
